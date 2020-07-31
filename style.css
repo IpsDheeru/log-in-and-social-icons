@@ -1,0 +1,150 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font font-family: sans-serif;
+	background: url(road2.jpg);
+	background-size: cover;
+	text-transform: uppercase;
+}
+.box
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%);
+width: 400px;
+padding: 40px;
+background: rgba(0,0,0,.8);
+box-sizing: border-box;
+box-shadow: 0 15px 25px rgba(0,0,0,.5);
+border-radius: 10px;
+}
+.box h2
+{
+	margin: 0 0 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+}
+.box p
+{
+	margin: 0 0 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+}
+
+.box .fa {
+	padding-left: 5px;
+}
+
+.box .inputBox
+{
+	position: relative;
+}
+.box .inputBox input
+{
+width: 100%;
+padding: 10px 0;
+font size: 16px;
+color: #fff;
+letter-spacing: 1px;
+margin-bottom: 30px;
+border: none;
+border-bottom: 1px solid #fff;
+outline: none;
+background: transparent;
+
+}
+.box .inputBox label
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+    font size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    pointer-events: none;
+    transition: .5s;
+}
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label
+{
+	top: -18px;
+	left: 0;
+	color: #03a9f4;
+	font size: 12px;
+}
+.box input[type="submit"]
+{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #03a9f4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+
+/*
+social media icon layout*/
+
+.icon-bar{
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	z-index: 10;
+}
+.icon-bar a{
+	text-decoration: none;
+	width: 200px;
+	/*background: #3b5999;*/
+	color: #fff;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 5px;
+	border-radius: 10px;
+	transform: translateX(-165px);
+	-webkit-transform: translateX(-165px);
+	-ms-transform: translateX(-165px);
+
+	transition: all 1s linear;
+	-webkit-transition:  all 1s linear ;
+	-ms-transition:  all 1s linear ;
+}
+
+a:hover{
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+}
+
+a i{
+	padding-left: 20px;
+	font-size: 30px !important;
+	animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom{
+	from{transform: scale(0.8);}
+	to {transform: scale(1);}
+}
+.facebook{
+	background: #3b5999;
+}
+.twitter{
+	background: #b3ccff;
+}
+.insta{
+	background: #ff4da6;
+}
+.whatsapp{
+	background: #1affa3;
+}
